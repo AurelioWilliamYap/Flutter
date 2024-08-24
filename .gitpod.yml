@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: flutter pub get
+    command: flutter run -d chrome
+
+ports:
+  - port: 8000
+    onOpen: open-preview
